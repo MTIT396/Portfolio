@@ -33,14 +33,6 @@ const Contact = () => {
           >
             <GetInTouchForm />
           </motion.div>
-          {/* Comments Form */}
-          {/* <motion.div
-            custom={2}
-            variants={flyInVariants}
-            className="w-full overflow-hidden"
-          >
-            <CommentForm />
-          </motion.div> */}
         </motion.div>
       </MotionInView>
     </SectionContainer>
