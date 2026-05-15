@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+body {
+  background-color: var(--background);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary: #6965fb;
+  --shadow-primary: 0 4px 8px #6965fb;
+  --background: #040013;
+}
+
+@theme {
+  --color-primary: var(--primary);
+  --color-bg: var(--background);
+  --font-poppins: var(--font-poppins);
+  --font-inter: var(--font-inter) --font-opensans: var(--font-opensans);
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}

@@ -28,7 +28,10 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
-    "**/*.mts"
+    "**/*.mts",
+    "src/components/ui/ElectriBorder.jsx",
+    "src/components/ui/TitleCard.jsx",
+    "src/components/ui/TiltedCard.jsx"
   ],
   "exclude": ["node_modules"]
 }
