@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { navLinks } from "@/config/nav";
+import { Sparkles } from "lucide-react";
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState<string>("");
@@ -44,8 +45,16 @@ const Navbar = () => {
             ${isActiveSection(item.href) ? "text-primary" : "text-white "}
           `}
         >
-          <div
-            className={`${isActiveSection(item.href) ? "opacity-100 scale-100" : ""} opacity-0 scale-0 rounded-full transition-all duration-300 size-1.5 bg-primary`}
+          <Sparkles
+            size={12}
+            className={`
+    transition-all duration-300
+    ${
+      isActiveSection(item.href)
+        ? "opacity-100 scale-100 text-primary rotate-0"
+        : "opacity-0 scale-0 -rotate-90 text-primary"
+    }
+  `}
           />
           {item.label}
         </button>

@@ -107,6 +107,7 @@ const GetInTouchForm = () => {
 
       <Button
         variant="secondary"
+        disabled={isSubmit}
         className="font-semibold rounded-xl mt-4 py-3"
       >
         {isSubmit ? (

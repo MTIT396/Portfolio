@@ -4,6 +4,7 @@ import Navbar from "../common/Navbar";
 import Logo from "../common/Logo";
 import { BookText } from "lucide-react";
 import Button from "../ui/button";
+import Link from "next/link";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = React.useState(false);
@@ -25,10 +26,12 @@ const Header = () => {
       {/* Middle */}
       <Navbar />
       {/* Right Side */}
-      <Button size="md" variant="secondary" className="rounded-full">
-        <BookText size={20} />
-        View CV
-      </Button>
+      <Link href="/myCV.pdf" target="_blank" rel="noopener noreferrer">
+        <Button size="md" variant="secondary" className="rounded-full">
+          <BookText size={20} />
+          Download CV
+        </Button>
+      </Link>
     </header>
   );
 };

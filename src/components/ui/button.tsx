@@ -12,10 +12,11 @@ const Button: React.FC<ButtonProps> = ({
   size = "md",
   className,
   children,
+  disabled,
   ...props
 }) => {
   const baseStyles =
-    "flex items-center text-nowrap justify-center group relative overflow-hidden rounded-md font-medium transition-all duration-300 ease-out shadow-md";
+    "flex items-center justify-center text-nowrap group relative overflow-hidden rounded-md font-medium transition-all duration-300 ease-out";
 
   const sizeStyles = {
     sm: "px-3 py-1.5 text-sm",
@@ -26,26 +27,43 @@ const Button: React.FC<ButtonProps> = ({
   const variantStyles = {
     primary:
       "bg-primary/20 border border-primary text-white drop-shadow-(--shadow-primary)",
+
     secondary:
       "bg-linear-to-r from-[#6965fb] to-[#9f56f5] border border-primary text-white hover:bg-linear-to-l drop-shadow-(--shadow-primary)",
+
     thirdary: "bg-white/5 font-medium text-white hover:bg-white/10",
+
     outline: "border border-primary text-primary hover:bg-primary/20",
   }[variant];
+
+  const disabledStyles =
+    "disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 disabled:hover:bg-current";
+
   return (
     <button
-      className={cn(baseStyles, sizeStyles, variantStyles, className)}
+      disabled={disabled}
+      className={cn(
+        baseStyles,
+        sizeStyles,
+        variantStyles,
+        disabledStyles,
+        className,
+      )}
       {...props}
     >
-      <span className="relative z-10 flex items-center justify-center gap-2 ">
+      <span className="relative z-10 flex items-center justify-center gap-2">
         {children}
       </span>
-      {/* Primary */}
-      {variant === "primary" && (
+
+      {/* Primary Hover Effect */}
+      {variant === "primary" && !disabled && (
         <span
-          className="absolute inset-0 bg-primary backdrop-blur-md 
-                   -translate-x-full group-hover:translate-x-0 
-                   transition-transform duration-500 ease-out"
-        ></span>
+          className="
+            absolute inset-0 bg-primary backdrop-blur-md
+            -translate-x-full group-hover:translate-x-0
+            transition-transform duration-500 ease-out
+          "
+        />
       )}
     </button>
   );

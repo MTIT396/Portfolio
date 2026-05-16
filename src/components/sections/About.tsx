@@ -15,6 +15,7 @@ import {
 import SectionContainer from "../common/SectionContainer";
 import { handleScrollToSection } from "@/lib/utils";
 import { SectionId } from "@/types/type.type";
+import Link from "next/link";
 const About = () => {
   return (
     <SectionContainer id="about">
@@ -69,10 +70,12 @@ const About = () => {
               variants={fadeInVariants}
               className="flex items-center gap-4"
             >
-              <Button size="lg" variant="secondary" className="text-sm ">
-                <BookText size={20} />
-                View CV
-              </Button>
+              <Link href="/myCV.pdf" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" variant="secondary" className="text-sm">
+                  <BookText size={20} />
+                  Download CV
+                </Button>
+              </Link>
               <Button
                 onClick={() => handleScrollToSection(SectionId.PORTFOLIO)}
                 variant="outline"
