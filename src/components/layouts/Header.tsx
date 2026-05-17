@@ -26,7 +26,7 @@ const Header = () => {
       {/* Middle */}
       <Navbar />
       {/* Right Side */}
-      <Link href="/myCV.pdf" target="_blank" rel="noopener noreferrer">
+      <Link href="/myresume.pdf" target="_blank" rel="noopener noreferrer">
         <Button size="md" variant="secondary" className="rounded-full">
           <BookText size={20} />
           Download CV

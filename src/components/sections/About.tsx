@@ -70,7 +70,11 @@ const About = () => {
               variants={fadeInVariants}
               className="flex items-center gap-4"
             >
-              <Link href="/myCV.pdf" target="_blank" rel="noopener noreferrer">
+              <Link
+                href="/myresume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Button size="lg" variant="secondary" className="text-sm">
                   <BookText size={20} />
                   Download CV
