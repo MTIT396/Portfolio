@@ -179,7 +179,7 @@ export const projects: Project[] = [
     title: "TMovies Trailer Platform",
     description:
       "TMovies Trailer Platform – A modern movie discovery platform where users can search movies, watch trailers, and explore a vast library of films, TV shows, and animations across multiple genres and countries, featuring a smooth cinematic & responsive UI and fast performance. 🎬",
-    imageUrl: "/projects/TMoviesgit .png",
+    imageUrl: "/projects/TMovies.png",
     liveDemoUrl: "https://t-movies-trailer-platform.vercel.app/",
     githubUrl: "https://github.com/MTIT396/TMovies_Trailer_Platform",
     techs: [
