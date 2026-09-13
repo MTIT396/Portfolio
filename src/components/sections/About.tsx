@@ -60,7 +60,7 @@ const About = () => {
               variants={fadeInVariants}
               className="text-gray-300 text-sm leading-relaxed"
             >
-              I am a second-year Information Technology student passionate about
+              I am a third-year Information Technology student passionate about
               web development, seeking an internship oppotunity to apply my
               technical skills and gain hands-on experience as a Frontend
               Developer. I aim to strengthen my technical and teamwork skills

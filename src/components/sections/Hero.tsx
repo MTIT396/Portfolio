@@ -37,7 +37,7 @@ export default function Hero() {
             variants={fadeInVariants}
             className="text-3xl text-nowrap md:text-6xl font-extrabold leading-tight drop-shadow-[0_4px_16px_#6965fb]"
           >
-            <span className="text-white">Frontend</span>{" "}
+            <span className="text-white">Web</span>{" "}
             <span className="bg-linear-to-r from-[#6965fb] to-[#9f56f5] bg-clip-text text-transparent">
               Developer
             </span>
@@ -45,7 +45,7 @@ export default function Hero() {
 
           <motion.div variants={fadeInVariants} className="text-gray-300">
             <ReactTyped
-              strings={["Second-year IT Student"]}
+              strings={["Third-year IT Student"]}
               typeSpeed={40}
               backSpeed={20}
               backDelay={4000}
@@ -60,7 +60,7 @@ export default function Hero() {
               variants={fadeInVariants}
               className="mt-2 sm:text-base text-sm text-gray-300"
             >
-              I am a second-year Information Technology student passionate about
+              I am a third-year Information Technology student passionate about
               web development, seeking an internship oppotunity to apply my
               technical skills and gain hands-on experience as a Frontend
               Developer. I aim to strengthen my technical and teamwork skills
